@@ -9,7 +9,7 @@ COMMENT
 if [ -f "$(dirname "$0")/utils_env.sh" ]; then
 	source "$(dirname "$0")/utils_env.sh"
 else
-	wget -q -O utils_env.sh https://gh.api.99988866.xyz/https://raw.githubusercontent.com/Oreomeow/checkinpanel/master/utils_env.sh
+	wget -q -O utils_env.sh https://ghproxy.com/https://raw.githubusercontent.com/Oreomeow/checkinpanel/master/utils_env.sh
 	source "$(dirname "$0")/utils_env.sh"
 fi
 get_some_path
