@@ -36,7 +36,7 @@ latest_VERSION=$(echo "$latest" | jq '.tag_name' | sed 's/v\|"//g')
 echo "最新版本:""$latest_VERSION"
 download_url=$(echo "$latest" | jq '.assets[0].browser_download_url' | sed 's/"//g')
 download() {
-	curl -L -o "./BILIBILI-HELPER.zip" "https://gh.api.99988866.xyz/$download_url"
+	curl -L -o "./BILIBILI-HELPER.zip" "https://ghproxy.com/$download_url"
 	mkdir ./tmp
 	echo "正在解压文件......."
 	unzip -o -d ./tmp/ BILIBILI-HELPER.zip
